@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table example</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Fruit name</th>
+            <th>Grade</th>
+            <th>Price</th>
+            <th>Stock count</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Oranges</td>
+            <td>Grade A</td>
+            <td>RM2.00</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lemons</td>
+            <td>Grade A</td>
+            <td>RM1.50</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td colspan="5">N/A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="4">N/A</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td colspan="2">Banana (FREE)</td>
+            <td>Grade A</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td rowspan="2">Durian!!</td>
+            <td>D24</td>
+            <td>RM20</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Musang King</td>
+            <td>RM40</td>
+            <td>30</td>
+        </tr>
+    </table>
+</body>
+</html>
