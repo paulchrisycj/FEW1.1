@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid blue;
+            background-color: lightblue;
+        }
+        .content-box{
+            box-sizing: content-box;
+        }
+        .border-box{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box content-box">
+        <h3>Content-Box</h3>
+        <p>Content-Box sizing will only let the defined width define the size of the content, not the entire size of the element.</p>
+        <p>The calculation of the content-box element will be Content Width + Padding + Border</p>
+    </div>
+    <div class="box border-box">
+        <h3>Border-Box</h3>
+        <p>Border-Box sizing will let width define the size of the entire element, adjusting the size of the content to fit the determined width.</p>
+        <p>The calculation of the border-box element will be Content + Padding + Border = Width</p>
+    </div>
+</body>
+</html>
