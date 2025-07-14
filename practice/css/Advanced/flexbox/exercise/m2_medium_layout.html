@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Layout</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header h1{
+            text-align: center;
+            width: 100%;
+        }
+        header{
+            display: flex;
+            height: 80px;
+            background-color: #f0f0f0;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 80vh;
+        }
+        .sidebar{
+            display: flex;
+            width: 200px !important;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #ddd;
+            padding: 20px;
+            /* height: 100%; */
+        }
+        .main-content{
+            padding: 20px;
+        }
+        .main-content p{
+            width: 100%;
+        }
+        footer{
+            display: flex;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Application Layout</h1>
+    </header>
+    <div class="container">
+        <sidebar class="sidebar">
+            <h1>Navigation</h3>
+            <p>Dashboard</p>
+            <p>Projects</p>
+            <p>Tasks</p>
+            <p>Calendar</p>
+            <p>Reports</p>
+            <p>Settings</p>
+        </sidebar>
+        <div class="main-content">
+            <h1>Main Content Area</h3>
+            <p>This is a sidebar layout with a flexible main content area using Flexbox.
+                
+            </p>
+            <p>
+                The header and footer span the full width of the page, while the sidebar and main content and positioned side by side.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam voluptatem, quae qui, modi exercitationem dolorum aliquam facere a sunt aspernatur, quos error quibusdam voluptatum fugiat rerum! Dicta sed fuga sequi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem veniam necessitatibus distinctio maiores, perferendis amet nostrum sint ratione tempore placeat dolores impedit rerum cupiditate, iste animi eaque ut suscipit.</p>
+        </div>
+    </div>
+    <footer>
+        <p>©2025 Application Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>

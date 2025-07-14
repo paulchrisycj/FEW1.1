@@ -1,0 +1,35 @@
+.container div {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background: red;
+  height: 180px !important;
+}
+
+.green {
+  background: green;
+  height: 80px !important;
+}
+
+.blue {
+  background: blue;
+}
+
+.red h3{
+    text-align: center;
+}
+
+.green h3{
+    text-align: center;
+}
+
+.blue h3{
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
