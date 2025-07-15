@@ -1,0 +1,4 @@
+p::before{
+    content: "Before the text: ";
+    font-weight: bold;
+}

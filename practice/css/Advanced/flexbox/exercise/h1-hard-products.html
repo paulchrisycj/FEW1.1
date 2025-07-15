@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Products</title>
+        <style>
+            body{
+                background-color: rgb(239, 239, 239);
+            }
+            header {
+                text-align: center;
+            }
+            .container {
+                display: flex;
+            }
+            .sidebar {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                border: 3px solid #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+                height: 100vh;
+                padding: 20px;
+                width: 200px;
+            }
+            .horizontal-line{
+                border: 1px solid #ddd;
+                margin-top: -10px;
+                margin-bottom: 10px;
+            }
+            .spacer{
+                margin-bottom: 13px;
+            }
+            .container h3{
+                margin-bottom: 3px;
+            }
+            .main-content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .product-card {
+                width: 300px;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                height: 450px;
+                margin-top: 20px;
+            }
+            .product-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+            .product-card-content {
+                padding: 20px;
+                text-align: left;
+            }
+            .product-card-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .product-card-price{
+                color: red
+            }
+            .product-add-to-cart-button{
+                background-color: #3EAAE2;
+                padding: 8px 40px 8px 40px;
+                border: 1px solid #3EAAE2;
+                color: white;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Our Products</h1>
+            <p>
+                Take a look at our high-quality products designed to make your
+                life better.
+            </p>
+        </header>
+        <div class="container">
+            <div class="sidebar">
+                <h2>Filter Products</h2>
+                <div class="horizontal-line"></div>
+                <h3>Categories</h3>
+                <div class="input">
+                    <input type="checkbox" name="input_AP" id="input_AP" />
+                    <label for="input_AP">All Products</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_Elec" id="input_Elec" />
+                    <label for="input_Elec">Electronics</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_Cloth" id="input_Cloth" />
+                    <label for="input_Cloth">Clothing</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_HK" id="input_HK" />
+                    <label for="input_HK">Home & Kitchen</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_SO" id="input_SO" />
+                    <label for="input_SO">Sports & Outdoors</label>
+                </div>
+                <div class="spacer"></div>
+                <h3>Price Range</h3>
+                <div class="input">
+                    <input type="checkbox" name="input_U25" id="input_U25" />
+                    <label for="input_U25">Under $25</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_O25" id="input_O25" />
+                    <label for="input_O25">$25 - $50</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_O50" id="input_O50" />
+                    <label for="input_O50">$50 - $100</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_O100" id="input_O100" />
+                    <label for="input_O100">$100 - $200</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="input_O200" id="input_O200" />
+                    <label for="input_O200">Over $200</label>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="product-card">
+                    <img
+                    src="https://placehold.co/300x200"
+                    alt="Toothless"/>
+                    <div class="product-card-content">
+                        <h1 class="product-card-title">Toothless</h1>
+                        <h3 class="product-card-price">$149.99</h3>
+                        <p class="product-card-text">This is a Toothless card!</p>
+                        <button class="product-add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
