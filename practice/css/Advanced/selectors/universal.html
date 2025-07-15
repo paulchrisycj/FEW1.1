@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector font size</title>
+    <style>
+        .container p{
+            color: red
+        }
+        .container > p {
+            font-weight: bold;
+        }
+        .container > p + p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>1</p>
+        <p>Some italic red words</p>
+        <div>
+            <p>3</p>
+            <p>Some italic red words</p>
+        </div>
+    </div>
+</body>
+</html>
