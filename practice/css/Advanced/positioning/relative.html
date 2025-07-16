@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Positioning</title>
+
+        <style>
+            .box {
+                position: relative;
+                top: 80px;
+                left: 20px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+            .no-margin-box{
+                position: relative;
+                top: 0px;
+                left: 20px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">This is a box with relative positioning.</div>
+            <div class="no-margin-box">This is a box with relative positioning.</div>
+            <div class="box">This is a box with relative positioning.</div>
+        </div>
+    </body>
+</html>

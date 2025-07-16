@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complex Positioning Layout</title>
+        <!-- Load your css file here -->
+        <link rel="stylesheet" href="h1.css" />
+    </head>
+    <body>
+        <header class="fixed-header">
+            <div class="logo">Site Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page-container">
+            <aside class="sticky-sidebar">
+                <h2>Sidebar</h2>
+                <hr />
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <h1>Main Content</h1>
+
+                <div class="overlapping-section">
+                    <!-- Create overlapping elements with z-index -->
+                    <div class="box box1">Box 1</div>
+                    <div class="box box2">Box 2</div>
+                    <div class="box box3">Box 3</div>
+                </div>
+
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+            </main>
+        </div>
+
+        <button class="floating-button">+</button>
+
+        <footer>
+            <p>Footer content</p>
+        </footer>
+    </body>
+</html>

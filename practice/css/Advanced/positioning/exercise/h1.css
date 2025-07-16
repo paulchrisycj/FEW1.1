@@ -1,0 +1,126 @@
+body{
+    background-color: #ddd;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+}
+header ul{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    padding-right: 30px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+}
+.page-container{
+    position: relative;
+    top: 50px;
+    display: flex;
+}
+.sticky-sidebar{
+    position: sticky;
+    top: 60px;
+    background-color: white;
+    width: 200px;
+    padding: 25px 25px 0px 25px;
+    height: 200px;
+}
+.sticky-sidebar ul{
+    padding-left: 0px;
+}
+hr{
+    border: 1px solid #1E8FC9;
+}
+.sticky-sidebar li{
+    list-style-type:  none;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.sticky-sidebar li a{
+    color: #1E8FC9;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+.overlapping-section{
+    position: relative;
+    background-color: #ddd;
+    width: 90%;
+    height: 440px;
+}
+.box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+}
+.box1{
+    top: 50px;
+    left: 50px;
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+.box2{
+    top: 130px;
+    left: 130px;
+    background-color: #1E8FC9;
+    text-align: center;
+    color: white;
+}
+.box3{
+    top: 210px;
+    left: 210px;
+    background-color:#30D284;
+    text-align: center;
+    color: white;
+}
+.content p{
+    position: relative;
+    top: 5px;
+}
+.floating-button{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #1E8FC9;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1E8FC9;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 30px;
+    z-index: 2;
+}
+footer{
+    position: relative;
+    top: 80px;
+    text-align: center;
+    background-color: darkblue;
+    padding: 7px;
+    color: white;
+}

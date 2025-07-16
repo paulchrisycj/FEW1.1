@@ -6,31 +6,23 @@
         <title>Positioning</title>
     </head>
     <body>
-        <div class="container">
-            <div class="box">
-                This is the parent box.
-                <div class="child-box">
-                    This is the child box with absolute positioning.
-                </div>
-            </div>
+        <div>Some space</div>
+        <div>Some space</div>
+        <div class="header">
+            This is a fixed header.
         </div>
 
         <style>
-            .box {
-                position: relative;
-                background-color: #f2f2f2;
-                padding: 20px;
-                border: 1px solid #ccc;
-            }
-
-            .child-box {
-                position: absolute;
-                top: 40px;
-                left: 20px;
-                background-color: #ddd;
-                padding: 10px;
-                border: 1px solid #999;
-            }
+        .header {
+            position: fixed;
+            top: 33px;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
         </style>
     </body>
 </html>

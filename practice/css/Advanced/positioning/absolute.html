@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Absolute Positioning</title>
+        <style>
+            .box {
+                position: relative;
+                top: 50px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+
+            .child-box {
+                position: absolute;
+                bottom: 0px;
+                left: 50px;
+                background-color: #ddd;
+                padding: 10px;
+                border: 1px solid #999;
+            }
+
+            .child-box-2 {
+                position: absolute;
+                bottom: 0px;
+                left: 100px;
+                background-color: #ddd;
+                padding: 10px;
+                border: 1px solid #999;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                This is the parent box.
+                <div class="child-box">
+                    This is the child box with absolute positioning.
+                </div>
+                <div class="child-box-2">
+                    This is the child box with absolute positioning.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
