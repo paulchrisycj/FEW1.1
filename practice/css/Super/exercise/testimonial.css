@@ -1,0 +1,43 @@
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    align-items: center;
+}
+.testimonial h1{
+    font-size: 36px;
+    text-align: center;
+}
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+}
+.card {
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.card p{
+    font-style: italic;
+}
+.card p::before{
+    content: "\"";
+    font-style: italic;
+}
+.card p::after{
+    content: "\"";
+    font-style: italic;
+}
+.card h5{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 5px;
+}
