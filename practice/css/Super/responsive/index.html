@@ -5,59 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
-            .container {
-                background-color: #eee;
-                padding: 40px;
-                margin: 20px;
-            }
-            .flex-container {
-                display: flex;
-                flex-direction: row;
-                padding: 40px;
-                margin: 20px;
+            .desktop-only {
+                display: block;
             }
 
-            .item {
-                width: 200px;
-                height: 200px;
-            }
-
-            .red {
-                background-color: red;
-            }
-
-            .green {
-                background-color: green;
-            }
-
-            .blue {
-                background-color: blue;
+            .mobile-only {
+                display: none;
             }
 
             @media screen and (max-width: 768px) {
-                .flex-container {
-                    flex-direction: column;
+                .desktop-only {
+                    display: none;
                 }
-                .red {
-                    background-color: cyan;
-                }
-                .green {
-                    background-color: magenta;
-                }
-                .blue {
-                    background-color: yellow;
-                }
-                h1 {
-                    font-size: 50px;
-                }
-                .container{
-                    padding: 10px;
-                    margin: 10px;
-                }
-            }
-            @media screen and (max-width: 600px) {
-                h1 {
-                    font-size: 90px;
+
+                .mobile-only {
+                    display: block;
                 }
             }
         </style>
@@ -72,5 +34,7 @@
         <div class="container">
             <p>Some text here</p>
         </div>
+        <div class="desktop-only">Desktop Content</div>
+        <div class="mobile-only">Mobile Content</div>
     </body>
 </html>

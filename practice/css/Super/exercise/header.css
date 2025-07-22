@@ -1,0 +1,26 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cadetblue;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+}
+header ul{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    padding-right: 30px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+header li a{
+    color: white;
+    text-decoration: none;
+}
