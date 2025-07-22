@@ -41,3 +41,15 @@
     font-size: 16px;
     margin-top: 5px;
 }
+@media screen and (max-width: 991px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
