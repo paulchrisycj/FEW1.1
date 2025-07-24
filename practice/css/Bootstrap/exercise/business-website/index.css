@@ -1,0 +1,16 @@
+#hero{
+    height: 100vh;
+    background-image: url("./img/background_image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hero > div{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#hero h1{
+    font-size: 82px;
+}
+#whyus h1{
+    font-size: 48px;
+}
